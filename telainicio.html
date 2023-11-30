@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNAKE GAME</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" type="image/png" sizes="16x16"  href="favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="telainicio.css">
+</head>
+
+<body>
+    <img src="snakegame.png" alt="Logo" class="logo">
+    <main class="flex"></main>
+    <template id="card">
+        <article class="card">
+            <img src="bg-pattern-card.svg" alt="imagen header card" class="card-header">
+            <div class="card-body">
+                <img class="card-body-img">
+                <h1 id="logado"></h1>
+                <h1 id="score"></h1>
+            </div>
+            <div class="card-footer">
+                <div class="card-footer-social">
+                    <div class='justify-center'>
+                        <button onclick='sair()'>Sair</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </template>
+    <div>
+        <a href="normalmode.html">
+            <img src="playnormal.png" alt="Logo" class="logo">
+        </a>
+        <a href="rankedmode.html">
+
+            <img src="playranked.png" alt="Logo" class="logo">
+        </a>
+        <a href="ranking.html">
+            <img src="topscore.png" alt="Logo2" class="logo2">
+        </a>
+    </div>
+
+    <script src="telainicio.js"></script>
+
+</body>
+
+</html>

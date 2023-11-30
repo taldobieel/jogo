@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-image: url(https://i.imgur.com/1DYAZ9N.png);
+  background-size: cover; /* Adicione esta propriedade para cobrir toda a tela */
+  height: 100%;
+  margin: 65px 0 0; /* Adicione um espaçamento no topo da página */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+  width: 300px; 
+  height: auto; 
+  margin-bottom: 20px; 
+  transition: transform 0.5s ease; 
+  animation: bounce 3s infinite; 
+}
+
+.logo2 {
+  width: 260px; 
+  height: auto; 
+  margin-bottom: 20px; 
+  transition: transform 0.5s ease; 
+  animation: bounce 3s infinite; 
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0); 
+  }
+  50% {
+    transform: translateY(-5px); 
+  }
+}
+
+.card {
+  font-size: 70.5%;
+  background-color: rgb(255, 255, 255);
+  width: 326px;
+  border-radius: 16px;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin: 30px;
+}
+
+.card-header {
+  width: 100%;
+  display: block;
+}
+
+.card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.383);
+}
+
+.card-body-img {
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  margin-top: calc(-100px - 5px);
+  background-color: rgb(255, 255, 255);
+}
+
+.card-body-text {
+  color: var(--dark-gray);
+  font-size: 1.6rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card-footer-social {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card-footer-social p {
+  letter-spacing: 1px;
+}
+
+/* Adicione estilos para a tabela e a imagem do Pokémon */
+/* Adicione estilos para a tabela e a imagem do Pokémon */
+#top5Table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#top5Table th, #top5Table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#top5Table th {
+  background-color: #f2f2f2;
+}
+
+/* Estilo padrão para todas as linhas da tabela */
+.table-rounded tbody tr {
+  background-color: #f8f9fa; /* Altere a cor conforme necessário para as linhas padrão */
+}
+
+/* Estilo específico para a linha do Top 1 */
+.table-rounded tbody tr:nth-child(1) {
+  background-color: #28a745; /* Altere a cor conforme necessário para o Top 1 */
+}
+
+/* Estilo específico para a linha do Top 2 */
+.table-rounded tbody tr:nth-child(2) {
+  background-color: #007bff; /* Altere a cor conforme necessário para o Top 2 */
+}
+
+/* Estilo específico para a linha do Top 3 */
+.table-rounded tbody tr:nth-child(3) {
+  background-color: #ffc107; /* Altere a cor conforme necessário para o Top 3 */
+}
+
+/* Remove as linhas verticais */
+.table-rounded th,
+.table-rounded td {
+  border: none;
+}
+
+/* Adiciona uma borda horizontal entre as linhas */
+.table-rounded tbody tr {
+  border-bottom: 2px solid #dee2e6; /* Altere a cor conforme necessário para a borda entre as linhas */
+}
+
+/* Remove a borda inferior da última linha */
+.table-rounded tbody tr:last-child {
+  border-bottom: none;
+}
+
+
+.pokemon-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.table-rounded {
+  border-radius: 10px; /* Altere o valor conforme necessário */
+  overflow: hidden; /* Certifica-se de que as bordas arredondadas são aplicadas corretamente */
+}
+
+
+.table-rounded thead th {
+  border-top: none; /* Remove a borda superior na cabeçalho da tabela */
+}
+
+.table-rounded tbody + tbody {
+  border-top: 2px solid #dee2e6; /* Adicione uma borda entre as linhas da tabela */
+}
+
+
+.medal-icon {
+  font-size: 1.5em;
+}
+
+.background-wrapper {
+  background-color: rgba(122, 92, 197, 0.6);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.table-wrapper {
+  max-width: 800px; /* Ajuste este valor conforme necessário */
+  margin: 0 auto; /* Isso centralizará a tabela */
+}
+
+button{
+  font-family: 'Montserrat', sans-serif;
+  background-color: transparent;
+  border-color: #000000;
+  color: #000000;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all .4s ease-out;
+}
+
+button:hover{
+  background-color: #17c3cf;
+  color: #000000;
+}

@@ -1,0 +1,31 @@
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: url(https://i.imgur.com/1DYAZ9N.png);
+    background-size: cover; /* Adicione esta propriedade para cobrir toda a tela */
+    height: 100%;
+    margin: 300px 0 0; /* Adicione um espaçamento no topo da página */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .logo {
+    width: 450px; 
+    height: auto; 
+    margin-bottom: 20px; 
+    transition: transform 0.5s ease; 
+    animation: bounce 3s infinite; 
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.555);
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0); 
+    }
+    50% {
+      transform: translateY(-5px); 
+    }
+  }
+  
+ 

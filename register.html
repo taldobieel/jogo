@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTD-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <link rel="icon" type="image/png" sizes="16x16"  href="favicon-16x16.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+
+    <title>SNAKE GAME</title>
+</head>
+
+<body>
+
+    <img src="snakegame.png" alt="Logo" class="logo">
+
+    <div class='container'>
+        <div class='card'>
+            <h1> Cadastrar </h1>
+
+            <div id='msgError'></div>
+            <div id='msgSuccess'></div>
+
+            <div class='label-float'>
+                <input type='text' id='nome' paceholder='' required>
+                <label id='labelNome' for='nome'>Nome</label>
+            </div>
+
+            <div class='label-float'>
+                <input type='text' id='usuario' paceholder='' required>
+                <label id='labelUsuario' for='usuario'>Usuario</label>
+            </div>
+
+            <div class='label-float'>
+                <input type='password' id='senha' paceholder='' required>
+                <label id='labelSenha' for='senha'>Senha</label>
+                <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+
+            <div class='label-float'>
+                <input type='password' id='confirmSenha' paceholder='' required>
+                <label id='labelconfirmSenha' for='confirmSenha'>Confirma Senha</label>
+                <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+
+            <div class='justify-center'>
+                <button onclick='cadastrar()'>Cadastrar</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="register.js"></script>
+
+</body>
+
+</html>

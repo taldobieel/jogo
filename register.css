@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://i.imgur.com/1DYAZ9N.png);
+}
+
+.logo {
+    width: 350px; 
+    height: auto; 
+    margin-bottom: 20px; 
+    transition: transform 0.5s ease; 
+    animation: bounce 3s infinite; 
+    margin-top: 100px;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0); 
+    }
+    50% {
+      transform: translateY(-15px); 
+    }
+  }
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 0px;
+}
+
+.card {
+    background-color: #00000080;
+    padding: 30px;
+    border-radius: 4%;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.555);
+    width: 400px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #17c3cf;
+}
+
+.label-float input{
+    width: 100%;
+    padding: 10px 10px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 1px solid #17c3cf;
+    background-color: transparent;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+    color: #fff;
+}    
+
+.label-float{
+    position: relative;
+    padding-top: 15px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float input:focus{
+    border-bottom: 2px solid #17c3cf;
+}  
+
+.label-float label{
+    color: #17c3cf;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label{
+  font-size: 13px;
+  margin-top: 0;
+    color: #17c3cf;
+
+}
+
+button{
+    background-color: transparent;
+    border-color: #17c3cf;
+    color: #17c3cf;
+    padding: 7px;
+    font-weight: 12pt;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all .4s ease-out;
+}
+
+button:hover{
+    background-color: #17c3cf;
+    color: #fff;
+}
+
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+.fa-eye {
+    position: absolute;
+    top: 28px;
+    right: 0px;
+    cursor: pointer;
+    color: #17c3cf;
+}
+
+#msgError{
+  text-align: center;
+  color: #b31616;
+  background-color: #ffbbbb;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+#msgSuccess{
+    text-align: center;
+    color: rgb(19, 116, 48);
+    background-color: #bbffbe;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+  }
